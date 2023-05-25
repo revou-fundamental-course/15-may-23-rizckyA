@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>RevoU Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <header >
+    <div class="main-heading" >
+        <h1><span id="Katik">Katik</span></h1>
+        <p>Kalkulator Matematik</p>
+    </div>
+  </header>
+    
+<div class="isi"> 
+    <div>
+        <h1>Welcome to Katik</h1>
+            <p>
+                Halo Selamat Datang di Katik
+            </p>
+            <p>
+                Katik adalah sebuah web apps sederhana yang berfungsi untik menghitung nilai luas dan keliling Persegi
+            </p>
+                <div>
+                    <button onclick="btnLuas()">Luas Persegi</button>
+                </div>
+                <div>
+                    <button onclick="btnKeliling()">Keliling Persegi</button>
+                </div>    
+    </div>
+
+    <div class="text" id="luas-persegi">
+        <div>
+        <h1>Luas Persegi</h1>
+         <p>Rumus Luas Persegi Yaitu</p>
+            <p> L = S x S</p>
+              <P>Dimana : <br>  
+                 L = Luas  <br> 
+                 S = Sisi
+              </P>
+        <hr>
+      <form>
+        <div>
+            <h1> Hitung Luas Persegi </h1>
+            <input type="text" placeholder="Sisi-Luas" name= "sisi-luas" id="sisi-luas" > </input>
+            
+                <p>
+                    L = S x S
+                </p>
+                <p>
+                     <span id="sisi"></span>
+                </p>
+                <p>
+                    <span id="output-luas"> </span>
+                </p>
+              
+        </div>
+      </form> 
+      
+                <button onclick="hitungLuas()">Hitung Luas</button>
+      </div>    
+    </div>  
+
+    <div class="text" id="keliling-persegi">
+        <h1>Keliling Persegi</h1>
+         <p>Rumus Keliling Persegi Yaitu</p>
+            <p> K = 4 x S</p>
+              <P>Dimana : <br>  
+                 K= Keliling  <br> 
+                 S = Sisi
+              </P>
+        <hr>
+
+      <form>
+        <div>
+            <h1> Hitung Keliling Persegi </h1>
+            <input type="text" placeholder="Sisi-Keliling" id="sisi-keliling"> </input>
+                <p>
+                    K = 4 x S
+                </p>
+                <p>
+                    <span id="sisikel"></span>
+                </p>
+                <p>
+                    <span id="output-keliling"> </span>
+                </p>
+         </div>
+      </form> 
+                <button onclick="hitungKeliling()">Hitung Keliling</button>    
+    </div> 
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

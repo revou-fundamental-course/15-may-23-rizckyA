@@ -52,7 +52,7 @@
     else {
         
         document.getElementById("sisi").innerHTML = "L = "+ sisi + " x "+sisi;
-        document.getElementById("output-luas").innerHTML = "L="+luas; // Hasil dari perhitungan
+        document.getElementById("output_luas").innerHTML = "L="+luas; // Hasil dari perhitungan
        
     }
    
@@ -67,7 +67,7 @@ function hitungKeliling(){
     }
     else {
     document.getElementById("sisikel").innerHTML = "K = 4 x "+sisi;
-    document.getElementById("output-keliling").innerHTML = "K = "+keliling;
+    document.getElementById("output_keliling").innerHTML = "K = "+keliling;
 }
 }
 

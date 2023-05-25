@@ -2,7 +2,7 @@
  function btnLuas() {
     const luas_persegi = document.getElementById("luas-persegi"); 
     var keliling_persegi = document.getElementById("keliling-persegi");
-    // memberitahukan bahwa variabel diatas didapat dari id yang sudah di set dalam html
+
  
     if (luas_persegi.style.display == "block") 
      {
@@ -42,7 +42,7 @@
   function hitungLuas(){
    var sisi = parseInt(document.getElementById("sisi-luas").value); //Karena type awalnya berbentuk string maka dilakukan pareIint untuk mengubah kedalam integer
   
-   var luas = sisi*sisi; // rumus luas persegi
+   var luas = sisi*sisi; 
 
     if (isNaN(sisi)){ //IsNan diggunakan untuk validate 
 
@@ -50,9 +50,9 @@
     
     }
     else {
-        
+        document.getElementById("rumusluas").innerHTML = "L = S x S";
         document.getElementById("sisi").innerHTML = "L = "+ sisi + " x "+sisi;
-        document.getElementById("output-luas").innerHTML = "L="+luas; // Hasil dari perhitungan
+        document.getElementById("output_luas").innerHTML = "L="+luas; // Hasil dari perhitungan
        
     }
    
@@ -66,8 +66,9 @@ function hitungKeliling(){
         alert ("Only Number")
     }
     else {
+    document.getElementById("rumuskel").innerHTML = "K = 4 x S";
     document.getElementById("sisikel").innerHTML = "K = 4 x "+sisi;
-    document.getElementById("output-keliling").innerHTML = "K = "+keliling;
+    document.getElementById("output_keliling").innerHTML = "K = "+keliling;
 }
 }
 
